@@ -1,5 +1,5 @@
-$color-main: green;
-
-body {
-    color: $color-main;
-}
+@import 'variables.scss';
+@import 'general.scss';
+@import 'blocks/visually-hidden.scss';
+@import 'blocks/header.scss';
+@import 'blocks/navigation-list.scss';

@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Mozart</title>
 </head>
-<body>
-    <h1>Жилой комплекс Mozart</h1>
+<body class="index-body">
+    <div class="container">
+        <header class="header">
+            <nav class="header__navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">О проекте</li>
+                    <li class="navigation-list__item">Предложения</li>
+                    <li class="navigation-list__item">Контакты</li>
+                </ul>
+            </nav>
+
+            <a class="header__tel link" href="tel:+74954325066">+7(495) 432 50 66</a>
+
+            <button class="header__button button" type="button">Записаться</button>
+        </header>
+    </div>
+
+    <main class="index-main">
+        <div class="container">
+            <h1 class="visually-hidden">Элитные апартаменты Mozart</h1>
+
+            <section class="intro">
+                <h2 class="intro__title">Mozart</h2>
+                <p class="intro__descr">Тихий дом в самом центре Москвы</p>
+            </section>
+    
+            <section class="welcome">
+                <h2 class="title welcome__title">Добро пожаловать в клубный дом Mozart</h2>
+    
+                <div class="welcome__text">
+                    <p class="welcome__paragraph">Геометричные элементы парадного фасада, светлые и просторные помещения с 5-метровыми потолками, сразу отсылают к эстетике американского классического ар-деко.
+                    </p>
+    
+                    <p class="welcome__paragraph">Его влияние быстро охватило Америку начала 19 века, формировало образ жизни того периода, который характеризуется бурным экономическим ростом, развитием технологий, машиностроения и строительства культовых известнейших арт-сооружений, а также развитием киноискусства.
+                    </p>
+                </div>
+    
+                <div class="welcome__options">
+                    <ul class="options-list">
+                        <li class="options-list__item">
+                            <p class="options-list__number">5<span class="options-list__span">M</span></p>
+                            <p class="options-list__descr">высота потолков</p>
+                        </li>
+                        <li class="options-list__item">
+                            <p class="options-list__number">2</p>
+                            <p class="options-list__descr">зоны отдыха</p>
+                        </li>
+                        <li class="options-list__item">
+                            <p class="options-list__number">7</p>
+                            <p class="options-list__descr">жилых этажей</p>
+                        </li>
+                        <li class="options-list__item">
+                            <p class="options-list__number">90</p>
+                            <p class="options-list__descr">премиум апартаментов</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

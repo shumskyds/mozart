@@ -1,0 +1,22 @@
+.main-nav {
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        @include link-reset;
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        padding: 10px 10px;
+    }
+}

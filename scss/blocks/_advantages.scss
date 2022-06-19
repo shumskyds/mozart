@@ -1,0 +1,42 @@
+.advantages {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        @include title-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        margin-top: 0;
+    }
+    &__list {
+        @include list-reset;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 20px;
+        max-width: 640px;
+    }
+    &__item {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 1px;
+            background-color: $text-color_dark;
+            opacity: 0.2;
+            position: absolute;
+            top: 14px;
+            left: -45px;
+        }
+    }
+}

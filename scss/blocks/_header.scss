@@ -1,0 +1,56 @@
+.header {
+    box-sizing: border-box;
+    min-height: 900px;
+    padding-top: 30px;
+    background-image: url('../img/header-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__main-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__nav {
+        margin-right: auto;
+    }
+    &__tel {
+        @include link-reset;
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        margin-right: 55px;
+    }
+    &__button {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: transparent;
+        padding: 15px 54px;
+        cursor: pointer;
+    }
+    &__title-wrapper {
+        margin-top: 200px;
+    }
+    &__title {
+        font-family: $font-secondary;
+        color: $text-color_light;
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 200px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        font-size: 23px;
+        line-height: 34px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+.welcome {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        @include title-regular;
+        
+        color: $text-color_dark;
+        font-family: $font-general;
+        margin-top: 0;
+    }
+    &__text-wrapper {
+        max-width: 560px;
+    }
+    &__paragraph {
+        @include text-regular;
+
+        color: $text-color_dark;
+        font-family: $font-general;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    &__table {
+        margin-top: 50px;
+    }
+
+
+}

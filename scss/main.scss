@@ -1,0 +1,29 @@
+/* === Mixins, Vars and Fonts === */
+
+@import 'mixins';
+@import 'variables';
+@import 'fonts';
+
+/* === /Mixins, Vars and Fonts === */
+
+/* === General styles === */
+
+@import 'blocks/visually-hidden';
+@import 'blocks/index-body';
+@import 'blocks/container';
+
+/* === /General styles === */
+
+/* === Blocks === */
+
+@import 'blocks/header';
+@import 'blocks/main-nav';
+@import 'blocks/welcome';
+@import 'blocks/flat-options';
+@import 'blocks/map-section';
+@import 'blocks/inspiration';
+@import 'blocks/advantages';
+@import 'blocks/offers';
+@import 'blocks/layout-card';
+
+/* === /Blocks === */

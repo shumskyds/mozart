@@ -1,0 +1,57 @@
+.map-section {
+    &__container {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        @include title-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        margin-bottom: 60px;
+    }
+    &__text-wrapper {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    &__paragraph {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        max-width: 450px;
+        margin-right: auto;
+    }
+    &__placeholder {
+        margin-bottom: 30px;
+    }
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        
+        border: none;
+        background-color: transparent;
+        padding: 5px 10px;
+        opacity: 0.5;
+        cursor: pointer;
+        &_current {
+            opacity: 1;
+        }
+        &_first {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+        &_last {
+            padding-left: 10px;
+            padding-right: 0;
+        }
+    }
+}

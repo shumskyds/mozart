@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Mozart</title>
 </head>
 <body class="index-body">
     <header class="header">
-        <div class="header__container container">
-            <div class="header__nav-wrapper">
-                <nav class="header-nav">
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="#">О проекте</a>
+        <div class="container">
+            <div class="header__main-wrapper">
+                <nav class="header__nav main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">О проекте</a>
                         </li>
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="#">Предложения</a>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Предложения</a>
                         </li>
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="#">Контакты</a>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
+                <a class="header__tel" href="tel:+74954325066">+7(495) 432 50 66</a>
+                <button class="header__button" type="button">Записаться</button>
             </div>
-            <a class="header__tel" href="tel:+74954325066">+7(495) 432 50 66</a>
-            <button class="header__button" type="button">Записаться</button>
+
+            <div class="header__title-wrapper">
+                <h2 class="header__title">Mozart</h2>
+                <p class="header__subtitle">Тихий дом в самом центре Москвы</p>
+            </div>
         </div>
     </header>
 
     <main class="index-main">
         <h1 class="visually-hidden">Элитное жилье Mozart</h1>
 
-        <section class="intro">
-            <h2 class="intro__title">Mozart</h2>
-            <p class="intro__subtitle">Тихий дом в самом центре Москвы</p>
-        </section>
-
         <section class="welcome">
             <div class="welcome__container container">
-                <h2 class="welcome__title">Добро пожаловать в клубный дом Mozart</h2>
+                <h2 class="welcome__title">Добро пожаловать<br>в клубный дом Mozart</h2>
 
                 <div class="welcome__text-wrapper">
                     <p class="welcome__paragraph">Геометричные элементы парадного фасада, светлые и просторные помещения с 5-метровыми потолками, сразу отсылают к эстетике американского классического ар-деко.</p>
@@ -90,7 +94,7 @@
         </section>
 
         <section class="map-section">
-            <div class="container">
+            <div class="map-section__container container">
                 <h2 class="map-section__title">ЦАО Пресненский район</h2>
                 <div class="map-section__text-wrapper">
                     <p class="map-section__paragraph">Москва-Сити —  это центр международной торговли и сердце столицы. Здесь расположены известные театры, музеи, лучшие рестораны.</p>
@@ -100,7 +104,7 @@
                     <img class="map-section__placeholder" src="https://placehold.jp/1200x650.png" alt="map" width="1200" height="650">
                     <ul class="map-section__list">
                         <li class="map-section__item">
-                            <button class="map-section__button">
+                            <button class="map-section__button map-section__button_first">
                                 Все объекты
                             </button>
                         </li>
@@ -125,7 +129,7 @@
                             </button>
                         </li>
                         <li class="map-section__item">
-                            <button class="map-section__button">
+                            <button class="map-section__button map-section__button_last">
                                 Спорт
                             </button>
                         </li>
@@ -137,13 +141,15 @@
         <section class="inspiration">
             <div class="inspiration__container container">
                 <div class="inspiration__img-wrapper">
-                    <img class="inspiration__img" src="https://placehold.jp/560x600.png" alt="interior" width="560" height="600">
+                    <img class="inspiration__img" src="img/inspiration-img.jpg" alt="interior" width="560" height="600">
                 </div>
 
                 <div class="inspiration__text-wrapper">
-                    <h2 class="inspiration__title"></h2>
-                    <p class="inspiration__paragraph"></p>
-                    <p class="inspiration__paragraph"></p>
+                    <h2 class="inspiration__title">Вдохновением послужила исходная архитектура самого дома</h2>
+                    <p class="inspiration__paragraph">Главный фасад здания исполнен в неоклассическом стиле с выступающими деталями и большим количество окон.  Это четко очерченная композиция из полированного гранита с элементами рустики, крупноформатного керамогранита  и декоративными элементами, выполненными на заказ.	
+                    </p>
+                    <p class="inspiration__paragraph">В основе интерьеров Дома Mozart приоритетными являются эстетика, где видимая роскошь сочетается с комфортом,  в неё идеально вписываются любые технические приборы и устройства. Это позволяет создавать действительно актуальные и модные решения в рамках устоявшейся классики.
+                    </p>
                 </div>
             </div>
         </section>
@@ -153,38 +159,38 @@
                 <h2 class="advantages__title">Преимущества</h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">Уникальная архитектура</li>
-                    <li class="advantages__item">Фитнес зона</li>
-                    <li class="advantages__item">Пентхаусы: 5м высота потолка</li>
-                    <li class="advantages__item">Просторные террасы</li>
                     <li class="advantages__item">Детская зона</li>
+                    <li class="advantages__item">Фитнес зона</li>
                     <li class="advantages__item">Собственный ритейл</li>
+                    <li class="advantages__item">Пентхаусы: 5м высота потолка</li>
                     <li class="advantages__item">Видовые характеристики</li>
+                    <li class="advantages__item">Просторные террасы</li>
                     <li class="advantages__item">Приватность</li>
                 </ul>
             </div>
         </section>
 
         <section class="offers">
-            <div class="container">
+            <div class="offers__container container">
                 <h2 class="offers__title">Предложения</h2>
                 <p class="offers__descr">Клубный Дом Mozart — это 7 этажей и всего 90 апартаментов.</p>
                 <div class="offers__cards-wrapper">
                     <div class="offers__card layout-card">
                         <div class="layout-card__img-wrapper">
-                            <img class="layout-card__img" src="https://placehold.jp/560x700.png" alt="apartments" width="560" height="700">
+                            <img class="layout-card__img" src="img/apartments.jpg" alt="apartments" width="560" height="700">
                         </div>
                         <h3 class="layout-card__title">Апартаменты</h3>
                         <p class="layout-card__paragraph">Со второго по шестой этаж гармонично спланированы апартаменты различной площади от 35 до 80 м2, жителям каждого из которых гарантирована максимальная приватность и комфорт.
                         </p>
-                        <button class="layout-card__button">Смотреть планировки</button>
+                        <button class="layout-card__button" type="button">Смотреть планировки</button>
                     </div>
                     <div class="offers__card layout-card">
                         <div class="layout-card__img-wrapper">
-                            <img class="layout-card__img" src="https://placehold.jp/560x700.png" alt="apartments" width="560" height="700">
+                            <img class="layout-card__img" src="img/penthouses.jpg" alt="apartments" width="560" height="700">
                         </div>
                         <h3 class="layout-card__title">Пентхаусы</h3>
                         <p class="layout-card__paragraph">На седьмом этаже Дома предусмотрено несколько пентхаусов. В распоряжении их жителей: высокие потолки 5,5 метров, свободная планировка для создания стильного, торжественного интерьера.</p>
-                        <button class="layout-card__button">Смотреть планировки</button>
+                        <button class="layout-card__button" type="button">Смотреть планировки</button>
                     </div>
                 </div>
             </div>

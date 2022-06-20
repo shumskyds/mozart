@@ -1,5 +1,31 @@
-$text-color_light: #ffffff;
-$text-color_dark: #201414;
-$bg-color_dark: #201414;
+/* === Fonts === */
+
 $font-general: 'SF Pro Display';
 $font-secondary: 'Cormorant Regular';
+
+/* === /Fonts === */
+
+/* === Text === */
+
+$text-color_light: #ffffff;
+$text-color-hover_light: rgba(255, 255, 255, 0.6);
+$text-color-active_light: rgba(255, 255, 255, 0.3);
+
+$text-color_dark: #201414;
+
+/* === /Text === */
+
+/* === Background === */
+
+$bg-color_dark: #201414;
+$bg-color-hover_dark: #302525;
+$bg-color-active_dark: rgba(48, 37, 37, 0.3);
+
+$bg-color_light: #ffffff;
+$bg-color-hover_light: rgba(32, 20, 20, 0.4);
+$bg-color-active_light: rgba(32, 20, 20, 0.2);
+
+$bg-color-hover_transparent: rgba(255, 255, 255, 0.3);
+$bg-color-active_transparent: rgba(255, 255, 255, 0.1);
+
+/* === /Background === */

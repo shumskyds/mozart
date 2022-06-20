@@ -14,9 +14,16 @@
     &__link {
         @include link-reset;
         @include text-regular;
+        @include active-element-transition;
 
         font-family: $font-general;
         color: $text-color_light;
         padding: 10px 10px;
+        &:hover {
+            color: $text-color-hover_light;
+        }
+        &:active {
+            color: $text-color-active_light;
+        }
     }
 }

@@ -1,3 +1,5 @@
+/* === Resets === */
+
 @mixin list-reset {
     list-style-type: none;
     padding: 0;
@@ -7,6 +9,10 @@
 @mixin link-reset {
     text-decoration: none;
 }
+
+/* === /Resets === */
+
+/* === Text === */
 
 @mixin text-regular {
     font-weight: 300;
@@ -30,6 +36,10 @@
     margin-top: 0;
 }
 
+/* === /Text === */
+
+/* === Elements === */
+
 @mixin footer-button {
     @include text-regular;
 
@@ -42,3 +52,9 @@
     margin-bottom: 30px;
     cursor: pointer;
 }
+
+@mixin active-element-transition {
+    transition: background-color, border-color, 0.3s;
+}
+
+/* === /Elements === */

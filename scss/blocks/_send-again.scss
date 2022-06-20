@@ -15,5 +15,13 @@
     }
     &__button {
         @include footer-button;
+        @include active-element-transition;
+
+        &:hover {
+            background-color: $bg-color-hover_dark;
+        }
+        &:active {
+            background-color: $bg-color-active_dark;
+        }
     }
 }

@@ -8,4 +8,14 @@
             margin-right: 0;
         }
     }
+    &__svg {
+        @include active-element-transition;
+        
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            opacity: 0.8;
+        }
+    }
 }

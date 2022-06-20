@@ -33,15 +33,21 @@
     }
     &__button {
         @include text-regular;
+        @include active-element-transition;
 
         font-family: $font-general;
         color: $text-color_dark;
-        
         border: none;
         background-color: transparent;
         padding: 5px 10px;
         opacity: 0.5;
         cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            opacity: 0.8;
+        }
         &_current {
             opacity: 1;
         }

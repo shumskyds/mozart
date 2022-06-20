@@ -32,6 +32,14 @@
     }
     &__button {
         @include footer-button;
+        @include active-element-transition;
+
+        &:hover {
+            background-color: $bg-color-hover_dark;
+        }
+        &:active {
+            background-color: $bg-color-active_dark;
+        }
     }
     &__agreement-wrapper {
         display: flex;
@@ -51,6 +59,24 @@
         line-height: 14px;
         letter-spacing: 0.02em;
         cursor: pointer;
+    }
+    &__personal-data-link {
+        @include link-reset;
+        @include active-element-transition;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        border-bottom: 1px solid $text-color-active_light;
+        &:hover {
+            color: $text-color-hover_light;
+        }
+        &:active {
+            color: $text-color-active_light;
+        }
     }
 
 }

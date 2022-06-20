@@ -19,14 +19,19 @@
         gap: 30px;
     }
     &__card {
+        @include active-element-transition;
+
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(32, 20, 20, 0.03);
         box-sizing: border-box;
         min-height: 230px;
+        &:hover {
+            background-color: $bg-color-active_light;
+        }
     }
     &__link {
-        padding: 60px;
+        padding: 70px 80px;
     }
 }

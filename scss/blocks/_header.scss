@@ -17,13 +17,21 @@
     &__tel {
         @include link-reset;
         @include text-regular;
+        @include active-element-transition;
 
         font-family: $font-general;
         color: $text-color_light;
         margin-right: 55px;
+        &:hover {
+            color: $text-color-hover_light;
+        }
+        &:active {
+            color: $text-color-active_light;
+        }
     }
     &__button {
         @include text-regular;
+        @include active-element-transition;
 
         font-family: $font-general;
         color: $text-color_light;
@@ -31,6 +39,12 @@
         background-color: transparent;
         padding: 15px 54px;
         cursor: pointer;
+        &:hover {
+            background-color: $bg-color-hover_transparent;
+        }
+        &:active {
+            background-color: $bg-color-active_transparent;
+        }
     }
     &__title-wrapper {
         margin-top: 200px;

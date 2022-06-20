@@ -24,6 +24,7 @@
     }
     &__button {
         @include text-regular;
+        @include active-element-transition;
 
         font-family: $font-general;
         color: $text-color_dark;
@@ -31,5 +32,12 @@
         border: 1px solid rgba(32, 20, 20, 0.3);
         padding: 14px 60px;
         cursor: pointer;
+        &:hover {
+            background-color: $bg-color-hover_light;
+            border-color: rgba(32, 20, 20, 0.7);
+        }
+        &:active {
+            background-color: $bg-color-active_light;
+        }
     }
 }

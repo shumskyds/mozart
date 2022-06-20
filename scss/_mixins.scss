@@ -29,3 +29,16 @@
     letter-spacing: 0.01em;
     margin-top: 0;
 }
+
+@mixin footer-button {
+    @include text-regular;
+
+    font-family: $font-general;
+    color: $text-color_light;
+    display: block;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 13px 54px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}

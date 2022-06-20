@@ -101,7 +101,7 @@
                     <p class="map-section__paragraph">Идеальное расположение в тихом переулке обеспечивает ощущение клубности и приватности владельцам дома Mozart.</p>
                 </div>
                 <div class="map-section__map">
-                    <img class="map-section__placeholder" src="https://placehold.jp/1200x650.png" alt="map" width="1200" height="650">
+                    <img class="map-section__placeholder" src="img/map.jpg" alt="map" width="1200" height="650">
                     <ul class="map-section__list">
                         <li class="map-section__item">
                             <button class="map-section__button map-section__button_first">
@@ -384,22 +384,24 @@
                     <fieldset class="request-form__fieldset">
                         <legend class="request-form__legend">Записаться<br>на консультацию</legend>
                         <div class="request-form__input-wrapper">
-                            <label class="request-form__label" for="input-name">Имя</label>
-                            <input class="request-form__input" id="input-name" type="text">
+                            <label class="request-form__label visually-hidden" for="input-name">Имя</label>
+                            <input class="request-form__input" id="input-name" type="text" placeholder="Имя">
 
-                            <label class="request-form__label" for="input-tel">Телефон</label>
-                            <input class="request-form__input" id="input-tel" type="text">
+                            <label class="request-form__label visually-hidden" for="input-tel">Телефон</label>
+                            <input class="request-form__input" id="input-tel" type="tel" placeholder="Телефон">
                         </div>
 
                         <button class="request-form__button" type="submit">Оставить заявку</button>
 
-                        <input class="request-form__checkbox" id="checkbox-agreement" type="checkbox">
-                        <label class="request-form__agreement" for="checkbox-agreement">Даю согласие на обработку персональных данных</label>
+                        <div class="request-form__agreement-wrapper">
+                            <input class="request-form__checkbox" id="checkbox-agreement" type="checkbox">
+                            <label class="request-form__agreement" for="checkbox-agreement">Даю согласие на обработку персональных данных</label>
+                        </div>
                     </fieldset>
                 </form>
 
-                <div class="send-again">
-                    <h3 class="send-again__title">Спасибо за обращение!</h3>
+                <div class="send-again visually-hidden">
+                    <h3 class="send-again__title">Спасибо<br>за обращение!</h3>
                     <p class="send-again__descr">С вами в ближайшее время свяжется наш менеджер!</p>
                     <button class="send-again__button" type="button">Отправить еще</button>
                 </div>

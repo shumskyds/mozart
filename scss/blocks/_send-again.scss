@@ -1,0 +1,19 @@
+.send-again {
+    &__title {
+        @include title-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        margin-bottom: 60px;
+    }
+    &__descr {
+        @include subtitle-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        margin-bottom: 50px;
+    }
+    &__button {
+        @include footer-button;
+    }
+}

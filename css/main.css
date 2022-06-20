@@ -59,6 +59,7 @@
 
 /* === /General styles === */
 /* === Blocks === */
+/* Header */
 .header {
   box-sizing: border-box;
   min-height: 900px;
@@ -146,11 +147,13 @@
   padding: 10px 10px;
 }
 
+/* /Header */
+/* Main */
 .welcome__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .welcome__title {
   font-weight: 300;
@@ -214,8 +217,8 @@
 }
 
 .map-section__container {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .map-section__title {
   font-weight: 300;
@@ -278,8 +281,8 @@
 .inspiration__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .inspiration__img-wrapper {
   width: 560px;
@@ -320,8 +323,8 @@
 .advantages__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .advantages__title {
   font-weight: 300;
@@ -363,8 +366,8 @@
 }
 
 .offers__container {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .offers__title {
   font-weight: 300;
@@ -427,14 +430,14 @@
   font-family: "SF Pro Display";
   color: #201414;
   background-color: transparent;
-  border: 1px solid rgba(32, 20, 20, 0.7);
+  border: 1px solid rgba(32, 20, 20, 0.3);
   padding: 14px 60px;
   cursor: pointer;
 }
 
 .carousel-section__container {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .carousel-section__title {
   font-weight: 300;
@@ -517,8 +520,8 @@
 }
 
 .specs__container {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .specs__title {
   font-weight: 300;
@@ -586,8 +589,8 @@
 }
 
 .partners__container {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .partners__title {
   font-weight: 300;
@@ -619,6 +622,8 @@
   padding: 60px;
 }
 
+/* /Main */
+/* Footer */
 .footer {
   background-color: #201414;
 }
@@ -628,18 +633,20 @@
   display: flex;
 }
 .footer__contacts {
+  max-width: 285px;
   margin-right: auto;
 }
-
-.contacts {
-  max-width: 400px;
+.footer__request {
+  width: 460px;
+  margin-right: 100px;
 }
+
 .contacts__title {
   font-family: "Cormorant Regular";
   color: #ffffff;
   font-weight: 400;
   font-size: 100px;
-  line-height: 100px;
+  line-height: 70px;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -691,4 +698,108 @@
   margin-right: 0;
 }
 
+.request-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.request-form__legend {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 0;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.request-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.request-form__input {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  height: 30px;
+  margin-bottom: 54px;
+}
+.request-form__input:last-child {
+  margin-bottom: 0;
+}
+.request-form__button {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  display: block;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 13px 54px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.request-form__agreement-wrapper {
+  display: flex;
+  align-items: center;
+}
+.request-form__checkbox {
+  margin-right: 20px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.request-form__agreement {
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.send-again__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 0;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.send-again__descr {
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.send-again__button {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  display: block;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 13px 54px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* /Footer */
 /* === /Blocks === */

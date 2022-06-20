@@ -1,11 +1,10 @@
 .contacts {
-    max-width: 400px;
     &__title {
         font-family: $font-secondary;
         color: $text-color_light;
         font-weight: 400;
         font-size: 100px;
-        line-height: 100px;
+        line-height: 70px;
         margin-top: 0;
         margin-bottom: 50px;
     }

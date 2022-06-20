@@ -6,6 +6,11 @@
         display: flex;
     }
     &__contacts {
+        max-width: 285px;
         margin-right: auto;
+    }
+    &__request {
+        width: 460px;
+        margin-right: 100px;
     }
 }

@@ -1,0 +1,56 @@
+.request-form {
+    &__fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__legend {
+        @include title-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        margin-bottom: 50px;
+    }
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    &__input {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        background-color: transparent;
+        height: 30px;
+        margin-bottom: 54px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__button {
+        @include footer-button;
+    }
+    &__agreement-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__checkbox {
+        margin-right: 20px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+    &__agreement {
+        font-family: $font-general;
+        color: $text-color_light;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+    }
+
+}

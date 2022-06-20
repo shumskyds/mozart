@@ -16,8 +16,15 @@
 
 /* === Blocks === */
 
+/* Header */
+
 @import 'blocks/header';
 @import 'blocks/main-nav';
+
+/* /Header */
+
+/* Main */
+
 @import 'blocks/welcome';
 @import 'blocks/flat-options';
 @import 'blocks/map-section';
@@ -29,8 +36,17 @@
 @import 'blocks/carousel';
 @import 'blocks/specs';
 @import 'blocks/partners';
+
+/* /Main */
+
+/* Footer */
+
 @import 'blocks/footer';
 @import 'blocks/contacts';
 @import 'blocks/socials';
+@import 'blocks/request-form';
+@import 'blocks/send-again';
+
+/* /Footer */
 
 /* === /Blocks === */

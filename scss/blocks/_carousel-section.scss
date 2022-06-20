@@ -1,0 +1,13 @@
+.carousel-section {
+    &__container {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        @include title-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        margin-bottom: 60px;
+    }
+}

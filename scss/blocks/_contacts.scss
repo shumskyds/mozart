@@ -1,0 +1,41 @@
+.contacts {
+    max-width: 400px;
+    &__title {
+        font-family: $font-secondary;
+        color: $text-color_light;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 100px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    &__address {
+        font-style: normal;
+        margin-bottom: 226px;
+    }
+    &__tel {
+        @include subtitle-regular;
+        @include link-reset;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_light;
+        opacity: 0.6;
+        margin-bottom: 70px;
+    }
+    &__copyright {
+        font-family: $font-general;
+        color: $text-color_light;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+}

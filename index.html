@@ -201,12 +201,12 @@
                 <h2 class="carousel-section__title">Зона комфорта</h2>
 
                 <div class="carousel-section__wrapper carousel">
-                    <button class="carousel__button carousel__button_to-left" type="button">Left</button>
-                    <button class="carousel__button carousel__button_to-right" type="button">Right</button>
+                    <button class="carousel__button carousel__button_to-left" type="button"></button>
+                    <button class="carousel__button carousel__button_to-right" type="button"></button>
 
                     <div class="carousel__item">
                         <div class="carousel__img-wrapper">
-                            <img class="carousel__img" src="https://placehold.jp/1000x600.png" alt="interior" width="1000" height="600">
+                            <img class="carousel__img" src="img/carousel-img-1.jpg" alt="interior" width="1000" height="600">
                         </div>
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">1/3</div>
@@ -217,9 +217,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel__item">
+                    <div class="carousel__item visually-hidden">
                         <div class="carousel__img-wrapper">
-                            <img class="carousel__img" src="https://placehold.jp/1000x600.png" alt="lobby" width="1000" height="600">
+                            <img class="carousel__img" src="img/carousel-img-2.jpg" alt="lobby" width="1000" height="600">
                         </div>
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">2/3</div>
@@ -230,9 +230,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel__item">
+                    <div class="carousel__item visually-hidden">
                         <div class="carousel__img-wrapper">
-                            <img class="carousel__img" src="https://placehold.jp/1000x600.png" alt="interior" width="1000" height="600">
+                            <img class="carousel__img" src="img/carousel-img-3.jpg" alt="interior" width="1000" height="600">
                         </div>
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">3/3</div>
@@ -248,81 +248,93 @@
         </section>
 
         <section class="specs">
-            <div class="container">
+            <div class="specs__container container">
                 <h2 class="specs__title">Технические характеристики</h2>
 
                 <ul class="specs__list">
                     <li class="specs__item">
                         <h3 class="specs__subtitle">СЕРВИС</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ПАРКИНГ	</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item specs__item_current">
                         <h3 class="specs__subtitle">СИСТЕМА БЕЗОПАСНОСТИ</h3>
                         <p class="specs__descr">Видеонаблюдение, охранная сигнализация по периметру дома, современная система контроля доступа</p>
-                        <button class="specs__butoon" type="button">-</button>
+                        <button class="specs__button specs__button_minimize" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ЛИФТЫ</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ТЕРРИТОРИЯ</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ОКНА</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">КОНДИЦИОНИРОВАНИЕ</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ВЕНТИЛЯЦИЯ</h3>
-                        <p class="specs__descr">Lorem ipsum dolor sit amet.</p>
-                        <button class="specs__butoon" type="button">+</button>
+                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                 </ul>
             </div>
         </section>
 
         <section class="partners">
-            <div class="container">
+            <div class="partners__container container">
                 <h2 class="partners__title">Партнеры</h2>
 
                 <ul class="partners__list">
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/nordgold-partner.svg" alt="logo nordgold" width="177" height="76">
+                        </a>
                     </li>
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/vtb-partner.svg" alt="logo vtb" width="177" height="49">
+                        </a>
                     </li>
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/sberbank-partner.svg" alt="logo sberbank" width="180" height="30">
+                        </a>
                     </li>
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/lukoil-partner.svg" alt="logo lukoil" width="177" height="50">
+                        </a>
                     </li>
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/gazprombank-partner.svg" alt="logo gazprombank" width="177" height="36">
+                        </a>
                     </li>
                     <li class="partners__card">
-                        <img class="partners__logo" src="https://placehold.jp/177x50.png" alt="logo" width="177" height="50">
+                        <a class="partners__link" href="#">
+                            <img class="partners__logo" src="img/tinkoff-partner.svg" alt="logo tinkoff" width="177" height="52">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -337,7 +349,7 @@
                 <h3 class="contacts__title">Mozart</h3>
 
                 <address class="contacts__address">
-                    <a class="contacts__tel" href="tel:+78122104242">+7(812)210-42-42</a>
+                    <a class="contacts__tel" href="tel:+78122104242">+7 (812) 210-42-42</a>
                     <p class="contacts__descr">
                         Москва, ул. Климашкина, 16<br>
                         Пн-Вс: с 9:00 до 20:00 
@@ -346,24 +358,24 @@
                     <ul class="contacts__socials socials">
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <img class="socials__icon" src="https://placehold.jp/25x25.png" alt="instagram" width="25" height="25">
+                                <img class="socials__icon" src="icons/instagram-icon.svg" alt="instagram" width="25" height="25">
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <img class="socials__icon" src="https://placehold.jp/25x25.png" alt="youtube" width="25" height="25">
+                                <img class="socials__icon" src="icons/youtube-icon.svg" alt="youtube" width="25" height="25">
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <img class="socials__icon" src="https://placehold.jp/25x25.png" alt="telegram" width="25" height="25">
+                                <img class="socials__icon" src="icons/telegram-icon.svg" alt="telegram" width="25" height="25">
                             </a>
                         </li>
                     </ul>
                 </address>
 
                 <div class="contacts__copyright">
-                    &#169;Mozart 2020. Все права защищены.
+                    &#169;Developed by Dmitry Shumsky
                 </div>
             </div>
 

@@ -1,0 +1,11 @@
+.footer {
+    background-color: $bg-color_dark;
+    &__container {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        display: flex;
+    }
+    &__contacts {
+        margin-right: auto;
+    }
+}

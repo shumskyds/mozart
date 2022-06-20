@@ -1,0 +1,66 @@
+.carousel {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    &__item {
+        width: 100%;
+    }
+    &__img-wrapper {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+    &__descr-wrapper {
+        display: flex;
+    }
+    &__counter {
+        @include subtitle-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+        margin-right: auto;
+    }
+    &__text-wrapper {
+        max-width: 460px;
+    }
+    &__title {
+        font-family: $font-general;
+        color: $text-color_dark;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        margin-bottom: 30px;
+    }
+    &__paragraph {
+        @include text-regular;
+
+        font-family: $font-general;
+        color: $text-color_dark;
+    }
+    &__button {
+        position: absolute;
+        top: 284px;
+        padding: 20px 15px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &_to-left {
+            left: -57px;
+            background-image: url('../icons/arrow-left.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &_to-right {
+            right: -57px;
+            background-image: url('../icons/arrow-right.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            
+        }
+    }
+}

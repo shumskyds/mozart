@@ -4,6 +4,10 @@
         justify-content: space-between;
         padding-top: 50px;
         padding-bottom: 50px;
+    
+        @include tablet-screen {
+            flex-direction: column;
+        }
     }
     &__title {
         @include title-regular;
@@ -19,6 +23,12 @@
         column-gap: 100px;
         row-gap: 20px;
         max-width: 640px;
+
+        @include tablet-screen {
+            max-width: 768px;
+            column-gap: 230px;
+            padding-left: 50px;
+        }
     }
     &__item {
         @include text-regular;

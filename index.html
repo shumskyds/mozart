@@ -101,7 +101,9 @@
                     <p class="map-section__paragraph">Идеальное расположение в тихом переулке обеспечивает ощущение клубности и приватности владельцам дома Mozart.</p>
                 </div>
                 <div class="map-section__map">
-                    <img class="map-section__placeholder" src="img/map.jpg" alt="map" width="1200" height="650">
+                    <div class="map-section__img-wrapper">
+                        <img class="map-section__img" src="img/map.jpg" alt="map" width="1200" height="650">
+                    </div>
                     <ul class="map-section__list">
                         <li class="map-section__item">
                             <button class="map-section__button map-section__button_first">
@@ -408,16 +410,16 @@
                         <legend class="request-form__legend">Записаться<br>на консультацию</legend>
                         <div class="request-form__input-wrapper">
                             <label class="request-form__label visually-hidden" for="input-name">Имя</label>
-                            <input class="request-form__input" id="input-name" type="text" placeholder="Имя">
+                            <input class="request-form__input" id="input-name" type="text" placeholder="Имя" required>
 
                             <label class="request-form__label visually-hidden" for="input-tel">Телефон</label>
-                            <input class="request-form__input" id="input-tel" type="tel" placeholder="Телефон">
+                            <input class="request-form__input" id="input-tel" type="tel" placeholder="Телефон" required>
                         </div>
 
                         <button class="request-form__button" type="submit">Оставить заявку</button>
 
                         <div class="request-form__agreement-wrapper">
-                            <input class="request-form__checkbox" id="checkbox-agreement" type="checkbox">
+                            <input class="request-form__checkbox visually-hidden" id="checkbox-agreement" type="checkbox" checked required>
                             <label class="request-form__agreement" for="checkbox-agreement">Даю согласие на обработку <a class="request-form__personal-data-link" href="#">персональных данных</a></label>
                         </div>
                     </fieldset>

@@ -1,22 +1,27 @@
 .inspiration {
     &__container {
         display: flex;
-        justify-content: space-between;
         padding-top: 50px;
         padding-bottom: 50px;
     }
     &__img-wrapper {
         width: 560px;
+        margin-right: 80px;
     }
     &__img {
         max-width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
     &__text-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 560px;
+
+        @include tablet-screen {
+            max-width: 440px;
+        }
     }
     &__title {
         @include title-regular;

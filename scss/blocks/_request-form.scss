@@ -50,8 +50,12 @@
         width: 16px;
         height: 16px;
         cursor: pointer;
+        &:checked + ::before {
+            background-image: url('../icons/checkbox-custom.svg');
+        }
     }
     &__agreement {
+        position: relative;
         font-family: $font-general;
         color: $text-color_light;
         font-weight: 300;
@@ -59,6 +63,19 @@
         line-height: 14px;
         letter-spacing: 0.02em;
         cursor: pointer;
+        padding-left: 36px;
+        &::before {
+            @include active-element-transition;
+
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -1px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url(../icons/checkbox-custom-empty.svg);
+        }
     }
     &__personal-data-link {
         @include link-reset;

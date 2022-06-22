@@ -21,9 +21,22 @@
         color: $text-color_dark;
         max-width: 450px;
         margin-right: auto;
+
+        @include tablet-screen {
+            max-width: 440px;
+        }
     }
-    &__placeholder {
+    &__img-wrapper {
+        max-width: 1200px;
         margin-bottom: 30px;
+
+        @include tablet-screen {
+            max-width: 960px;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
     }
     &__list {
         @include list-reset;

@@ -9,5 +9,9 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 60px;
+
+        @include tablet-screen {
+            margin-left: 80px;
+        }
     }
 }

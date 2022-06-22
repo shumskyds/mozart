@@ -28,6 +28,10 @@
         &:active {
             color: $text-color-active_light;
         }
+
+        @include tablet-screen {
+            margin-right: 50px;
+        }
     }
     &__button {
         @include text-regular;

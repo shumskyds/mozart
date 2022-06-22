@@ -1,3 +1,25 @@
+/* === Media === */
+
+@mixin tablet-screen {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin modern-phone-screen {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin old-phone-screen {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+/* === /Media === */
+
 /* === Resets === */
 
 @mixin list-reset {
@@ -54,7 +76,7 @@
 }
 
 @mixin active-element-transition {
-    transition: background-color, border-color, 0.3s;
+    transition: background-image, background-color, border-color, 0.3s;
 }
 
 /* === /Elements === */

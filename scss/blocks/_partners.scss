@@ -2,6 +2,10 @@
     &__container {
         padding-top: 50px;
         padding-bottom: 50px;
+
+        @include tablet-screen {
+            max-width: 800px;
+        }
     }
     &__title {
         @include title-regular;
@@ -17,6 +21,11 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
+
+        @include tablet-screen {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &__card {
         @include active-element-transition;
@@ -33,5 +42,9 @@
     }
     &__link {
         padding: 70px 80px;
+
+        @include tablet-screen {
+            // padding: 30px 40px;
+        }
     }
 }

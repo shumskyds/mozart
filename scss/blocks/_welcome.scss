@@ -13,6 +13,10 @@
     }
     &__text-wrapper {
         max-width: 560px;
+        
+        @include tablet-screen {
+            max-width: 440px;
+        }
     }
     &__paragraph {
         @include text-regular;

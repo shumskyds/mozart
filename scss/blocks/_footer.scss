@@ -12,5 +12,9 @@
     &__request {
         width: 460px;
         margin-right: 100px;
+
+        @include tablet-screen {
+            width: 340px;   
+        }
     }
 }

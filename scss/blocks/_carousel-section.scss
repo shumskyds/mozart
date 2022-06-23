@@ -9,11 +9,7 @@
         color: $text-color_dark;
         margin-bottom: 60px;
 
-        @include tablet-screen {
-            margin-left: 80px;
-        }
         @include modern-phone-screen {
-            margin-left: 60px;
             margin-bottom: 40px;
         }
     }

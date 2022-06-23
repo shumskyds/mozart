@@ -1,13 +1,15 @@
 .footer {
     background-color: $bg-color_dark;
     &__container {
-        padding-top: 120px;
-        padding-bottom: 40px;
+        padding: 120px 100px 40px 100px;
         display: flex;
 
+        @include tablet-screen {
+            padding: 80px 50px 30px 50px;
+        }
+
         @include modern-phone-screen {
-            padding-top: 67px;
-            padding-bottom: 20px;
+            padding: 67px 30px 20px 30px;
         }
     }
     &__contacts {
@@ -19,16 +21,14 @@
         }
     }
     &__request {
-        width: 460px;
-        margin-right: 100px;
+        max-width: 460px;
 
         @include tablet-screen {
-            width: 340px;   
+            max-width: 340px;   
         }
 
         @include modern-phone-screen {
-            margin-right: 0;
-            width: 280px;
+            max-width: 280px;
         }
     }
 }

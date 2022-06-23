@@ -1,19 +1,19 @@
 /* === Media === */
 
 @mixin tablet-screen {
-    @media (max-width: 1000px) {
+    @media (max-width: 992px) {
         @content;
     }
 }
 
 @mixin modern-phone-screen {
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         @content;
     }
 }
 
 @mixin old-phone-screen {
-    @media (max-width: 320px) {
+    @media (max-width: 576px) {
         @content;
     }
 }
@@ -53,6 +53,10 @@
     font-size: 40px;
     line-height: 47px;
     margin-top: 0;
+
+    @include tablet-screen {
+        font-size: 35px;
+    }
 
     @include modern-phone-screen {
         font-size: 25px;

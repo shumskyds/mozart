@@ -8,13 +8,17 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 60px;
+
+        @include tablet-screen {
+            margin-bottom: 30px;
+        }
     }
     &__list {
         @include list-reset;
     }
     &__item {
         position: relative;
-        padding: 28px 20px;
+        padding: 28px 50px 28px 20px;
         border-top: 1px solid rgba(32, 20, 20, 0.1);
         &:last-child {
             border-bottom: 1px solid rgba(32, 20, 20, 0.1);

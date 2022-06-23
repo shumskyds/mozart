@@ -4,11 +4,40 @@
 
         display: flex;
         flex-wrap: wrap;
+
+        @include modern-phone-screen {
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 150px;
+        }
+    }
+    &__expand {
+        display: none;
+        width: 50px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        background-image: url('../icons/hamburger.svg');
+        
+        @include modern-phone-screen {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
     }
     &__item {
         margin-right: 30px;
         &:last-child {
             margin-right: 0;
+        }
+
+        @include modern-phone-screen {
+            margin-right: 0;;
         }
     }
     &__link {

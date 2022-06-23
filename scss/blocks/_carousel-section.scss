@@ -1,7 +1,6 @@
 .carousel-section {
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        @include section-paddings;
     }
     &__title {
         @include title-regular;
@@ -12,6 +11,10 @@
 
         @include tablet-screen {
             margin-left: 80px;
+        }
+        @include modern-phone-screen {
+            margin-left: 60px;
+            margin-bottom: 40px;
         }
     }
 }

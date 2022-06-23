@@ -5,6 +5,13 @@
 
         display: flex;
         justify-content: space-between;
+
+        @include modern-phone-screen {
+            width: 240px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
+        }
     }
     &__number {
         font-family: $font-general;
@@ -20,7 +27,7 @@
         font-size: 30px;
         line-height: 45px;
         color: $text-color_dark;
-        margin-left: 5px;
+        margin-left: 4px;
     }
     &__descr {
         font-family: $font-general;

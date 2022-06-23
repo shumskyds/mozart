@@ -41,6 +41,11 @@
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.01em;
+
+    @include modern-phone-screen {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 @mixin title-regular {
@@ -48,6 +53,11 @@
     font-size: 40px;
     line-height: 47px;
     margin-top: 0;
+
+    @include modern-phone-screen {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 
 @mixin subtitle-regular {
@@ -56,6 +66,11 @@
     line-height: 34px;
     letter-spacing: 0.01em;
     margin-top: 0;
+
+    @include modern-phone-screen {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 /* === /Text === */
@@ -73,6 +88,15 @@
     padding: 13px 54px;
     margin-bottom: 30px;
     cursor: pointer;
+}
+
+@mixin section-paddings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include modern-phone-screen {
+        padding-bottom: 0;
+    }
 }
 
 @mixin active-element-transition {

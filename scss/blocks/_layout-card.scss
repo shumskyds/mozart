@@ -8,6 +8,11 @@
     @include tablet-screen {
         max-width: 440px;
     }
+    @include modern-phone-screen {
+        max-width: 275px;
+        margin-right: 50px;
+        min-height: 600px;
+    }
     &__img-wrapper {
         width: 560px;
         height: 700px;
@@ -16,6 +21,11 @@
         @include tablet-screen {
             margin-bottom: 30px;
             width: 440px;
+        }
+        @include modern-phone-screen {
+            margin-bottom: 20px;
+            width: 275px;
+            height: 360px;
         }
     }
     &:last-child {
@@ -31,6 +41,10 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 30px;
+
+        @include modern-phone-screen {
+            margin-bottom: 15px;
+        }
     }
     &__paragraph {
         @include text-regular;

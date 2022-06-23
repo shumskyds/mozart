@@ -1,7 +1,6 @@
 .specs {
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        @include section-paddings;
     }
     &__title {
         @include title-regular;

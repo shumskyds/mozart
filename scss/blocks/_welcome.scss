@@ -1,9 +1,10 @@
 .welcome {
     &__container {
+        @include section-paddings;
+
         display: flex;
         justify-content: space-between;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        position: relative;
     }
     &__title {
         @include title-regular;
@@ -17,6 +18,10 @@
         @include tablet-screen {
             max-width: 440px;
         }
+
+        @include modern-phone-screen {
+            max-width: 276px;
+        }
     }
     &__paragraph {
         @include text-regular;
@@ -28,6 +33,12 @@
     }
     &__table {
         margin-top: 50px;
+
+        @include modern-phone-screen {
+            position: absolute;
+            top: 90px;
+            left: 40px;
+        }
     }
 
 

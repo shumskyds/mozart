@@ -1,7 +1,6 @@
 .map-section {
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        @include section-paddings;
     }
     &__title {
         @include title-regular;
@@ -9,6 +8,10 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 60px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__text-wrapper {
         display: flex;
@@ -21,9 +24,18 @@
         color: $text-color_dark;
         max-width: 450px;
         margin-right: auto;
+        &:last-child {
+            @include modern-phone-screen {
+                margin-right: 0;
+            }
+        }
 
         @include tablet-screen {
             max-width: 440px;
+        }
+
+        @include modern-phone-screen {
+            max-width: 280px;
         }
     }
     &__img-wrapper {

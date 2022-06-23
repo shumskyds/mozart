@@ -1,9 +1,9 @@
 .advantages {
     &__container {
+        @include section-paddings;
+        
         display: flex;
         justify-content: space-between;
-        padding-top: 50px;
-        padding-bottom: 50px;
     
         @include tablet-screen {
             flex-direction: column;
@@ -14,6 +14,10 @@
 
         font-family: $font-general;
         color: $text-color_dark;
+
+        @include modern-phone-screen {
+            margin-bottom: 50px;
+        }
     }
     &__list {
         @include list-reset;
@@ -28,6 +32,10 @@
             max-width: 768px;
             column-gap: 230px;
             padding-left: 50px;
+        }
+        @include modern-phone-screen {
+            max-width: 512px;
+            column-gap: 50px;
         }
     }
     &__item {
@@ -44,7 +52,8 @@
             background-color: $text-color_dark;
             opacity: 0.2;
             position: absolute;
-            top: 14px;
+            top: 50%;
+            transform: translateY(-50%);
             left: -45px;
         }
     }

@@ -1,17 +1,28 @@
 .inspiration {
     &__container {
+        @include section-paddings;
+
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     &__img-wrapper {
         width: 560px;
         margin-right: 80px;
+
+        @include modern-phone-screen {
+            align-self: center;
+            width: 275px;
+            height: 450px;
+            margin-right: 50px;
+        }
     }
     &__img {
         max-width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @include modern-phone-screen {
+           
+        }
     }
     &__text-wrapper {
         display: flex;
@@ -22,6 +33,10 @@
         @include tablet-screen {
             max-width: 440px;
         }
+
+        @include modern-phone-screen {
+            max-width: 275px;
+        }
     }
     &__title {
         @include title-regular;
@@ -29,6 +44,10 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 60px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__paragraph {
         @include text-regular;
@@ -39,6 +58,10 @@
         margin-bottom: 40px;
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @include modern-phone-screen {
+            margin-bottom: 25px;
         }
     }
 }

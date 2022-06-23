@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     box-sizing: border-box;
     min-height: 900px;
     padding-top: 30px;
@@ -6,6 +7,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include modern-phone-screen {
+        padding-top: 18px;
+        min-height: 800px;
+    }
     &__main-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -32,6 +38,9 @@
         @include tablet-screen {
             margin-right: 50px;
         }
+        @include modern-phone-screen {
+            margin-right: 0;
+        }
     }
     &__button {
         @include text-regular;
@@ -49,6 +58,14 @@
         &:active {
             background-color: $bg-color-active_transparent;
         }
+
+        @include modern-phone-screen {
+            position: absolute;
+            bottom: 211px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 81px;
+        }
     }
     &__title-wrapper {
         margin-top: 200px;
@@ -61,9 +78,14 @@
         line-height: 200px;
         text-align: center;
         margin-bottom: 30px;
+
+        @include modern-phone-screen {
+            font-size: 150px;
+            line-height: 150px; 
+        }
     }
     &__subtitle {
-        @include text-regular;
+        @include subtitle-regular;
 
         font-family: $font-general;
         color: $text-color_light;

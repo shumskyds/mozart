@@ -1,7 +1,6 @@
 .offers {
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        @include section-paddings;
     }
     &__title {
         @include title-regular;
@@ -9,6 +8,10 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 50px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__descr {
         font-family: $font-general;
@@ -19,6 +22,13 @@
         letter-spacing: 0.01em;
         margin-bottom: 60px;
         max-width: 500px;
+        
+        @include modern-phone-screen {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 263px;
+            margin-bottom: 40px;
+        }
     }
     &__cards-wrapper {
         display: flex;

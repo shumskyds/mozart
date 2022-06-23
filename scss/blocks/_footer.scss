@@ -4,10 +4,19 @@
         padding-top: 120px;
         padding-bottom: 40px;
         display: flex;
+
+        @include modern-phone-screen {
+            padding-top: 67px;
+            padding-bottom: 20px;
+        }
     }
     &__contacts {
         max-width: 285px;
         margin-right: auto;
+        
+        @include modern-phone-screen {
+            max-width: 202px;
+        }
     }
     &__request {
         width: 460px;
@@ -15,6 +24,11 @@
 
         @include tablet-screen {
             width: 340px;   
+        }
+
+        @include modern-phone-screen {
+            margin-right: 0;
+            width: 280px;
         }
     }
 }

@@ -10,11 +10,19 @@
         font-family: $font-general;
         color: $text-color_light;
         margin-bottom: 50px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__input-wrapper {
         display: flex;
         flex-direction: column;
         margin-bottom: 70px;
+
+        @include modern-phone-screen {
+            margin-bottom: 50px;
+        }
     }
     &__input {
         @include text-regular;
@@ -29,16 +37,14 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__button {
-        @include footer-button;
-        @include active-element-transition;
-
-        &:hover {
-            background-color: $bg-color-hover_dark;
-        }
-        &:active {
-            background-color: $bg-color-active_dark;
+        @include modern-phone-screen {
+            margin-bottom: 20px;
         }
     }
     &__agreement-wrapper {

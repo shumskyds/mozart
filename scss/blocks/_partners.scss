@@ -6,6 +6,9 @@
         @include tablet-screen {
             max-width: 800px;
         }
+        @include modern-phone-screen {
+            max-width: 500px;
+        }
     }
     &__title {
         @include title-regular;
@@ -13,6 +16,10 @@
         font-family: $font-general;
         color: $text-color_dark;
         margin-bottom: 60px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__list {
         @include list-reset;
@@ -25,6 +32,11 @@
         @include tablet-screen {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr;
+        }
+        @include modern-phone-screen {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
         }
     }
     &__card {
@@ -39,12 +51,23 @@
         &:hover {
             background-color: $bg-color-active_light;
         }
+        
+        @include modern-phone-screen {
+            min-height: 80px;
+            max-width: 140px;
+        }
     }
     &__link {
         padding: 70px 80px;
 
-        @include tablet-screen {
-            // padding: 30px 40px;
+        @include modern-phone-screen {
+            padding: 20px;
+        }
+    }
+    &__logo {
+        @include modern-phone-screen {
+            max-width: 115px;
+            height: auto;
         }
     }
 }

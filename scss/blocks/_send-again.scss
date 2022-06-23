@@ -5,6 +5,10 @@
         font-family: $font-general;
         color: $text-color_light;
         margin-bottom: 60px;
+
+        @include modern-phone-screen {
+            margin-bottom: 50px;
+        }
     }
     &__descr {
         @include subtitle-regular;
@@ -12,6 +16,10 @@
         font-family: $font-general;
         color: $text-color_light;
         margin-bottom: 50px;
+
+        @include modern-phone-screen {
+            margin-bottom: 40px;
+        }
     }
     &__button {
         @include footer-button;

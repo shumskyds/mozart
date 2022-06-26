@@ -11,6 +11,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 10px;
+            column-gap: 30px;
         }
     }
     &__number {
@@ -20,6 +21,10 @@
         line-height: 60px;
         color: $text-color_dark;
         margin-bottom: 10px;
+
+        @include tablet-screen {
+            font-size: 50px;
+        }
     }
     &__letter {
         font-family: $font-general;

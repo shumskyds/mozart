@@ -11,12 +11,13 @@
         
         color: $text-color_dark;
         font-family: $font-general;
+        margin-right: 20px;
     }
     &__text-wrapper {
         max-width: 560px;
         
         @include tablet-screen {
-            max-width: 350px;
+            max-width: 400px;
         }
 
         @include modern-phone-screen {

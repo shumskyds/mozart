@@ -55,7 +55,7 @@
     margin-top: 0;
 
     @include tablet-screen {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     @include modern-phone-screen {
@@ -99,7 +99,8 @@
     padding-bottom: 50px;
 
     @include modern-phone-screen {
-        padding-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 

@@ -60,5 +60,12 @@
         color: $text-color_dark;
         margin-top: 10px;
         margin-bottom: 0;
+        &_hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        &_current {
+            max-height: 300px;
+        }
     }
 }

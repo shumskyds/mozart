@@ -9,7 +9,11 @@
         max-width: 760px;
     }
     &__item {
+        display: none;
         padding: 0 40px;
+        &_visible {
+            display: block;
+        }
 
         @include tablet-screen {
             padding: 0 30px;

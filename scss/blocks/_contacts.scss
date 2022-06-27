@@ -17,6 +17,13 @@
     &__address {
         font-style: normal;
         margin-bottom: 226px;
+
+        @include tablet-screen {
+            margin-bottom: 126px;
+        }
+        @include modern-phone-screen {
+            margin-bottom: 76px;
+        }
     }
     &__tel {
         @include subtitle-regular;

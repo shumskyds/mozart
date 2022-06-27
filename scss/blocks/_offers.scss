@@ -7,10 +7,10 @@
 
         font-family: $font-general;
         color: $text-color_dark;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         @include modern-phone-screen {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
     &__descr {
@@ -20,14 +20,14 @@
         font-weight: 300;
         line-height: 34px;
         letter-spacing: 0.01em;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         max-width: 500px;
         
         @include modern-phone-screen {
             font-size: 16px;
             line-height: 24px;
             max-width: 263px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
     &__cards-wrapper {

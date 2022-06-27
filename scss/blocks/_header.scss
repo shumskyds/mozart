@@ -39,6 +39,8 @@
         }
         @include modern-phone-screen {
             margin-right: 0;
+            font-size: 18px;
+            line-height: 27px;
         }
     }
     &__button {
@@ -68,6 +70,7 @@
             left: 50%;
             transform: translateX(-50%);
             padding: 14px 81px;
+            font-size: 18px;
         }
     }
     &__title-wrapper {
@@ -95,5 +98,15 @@
         font-size: 23px;
         line-height: 34px;
         text-align: center;
+
+        @include modern-phone-screen {
+            font-size: 20px;
+        }
+    }
+    &__popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

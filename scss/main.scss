@@ -9,8 +9,11 @@
 /* === General styles === */
 
 @import 'blocks/visually-hidden';
+@import 'blocks/display-none';
 @import 'blocks/index-body';
 @import 'blocks/container';
+@import 'blocks/request-popup';
+@import 'blocks/popup-close';
 
 /* === /General styles === */
 

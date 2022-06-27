@@ -37,6 +37,35 @@
                 <p class="header__subtitle">Тихий дом в самом центре Москвы</p>
             </div>
         </div>
+
+        <div class="header__popup request-popup display-none">
+            <button class="request-popup__close" type="button"></button>
+            <form class="request-form request-popup__form" action="#" method="">
+                <fieldset class="request-form__fieldset">
+                    <legend class="request-form__legend">Записаться<br>на консультацию</legend>
+                    <div class="request-form__input-wrapper">
+                        <label class="request-form__label visually-hidden" for="input-name">Имя</label>
+                        <input class="request-form__input" id="input-name" type="text" placeholder="Имя">
+
+                        <label class="request-form__label visually-hidden" for="input-tel">Телефон</label>
+                        <input class="request-form__input" id="input-tel" type="tel" placeholder="Телефон">
+                    </div>
+
+                    <button class="request-form__button footer-form-button request-popup__button" type="submit">Оставить заявку</button>
+
+                    <div class="request-form__agreement-wrapper">
+                        <input class="request-form__checkbox visually-hidden" id="popup-checkbox-agreement" type="checkbox" checked required>
+                        <label class="request-form__agreement" for="popup-checkbox-agreement">Даю согласие на обработку <a class="request-form__personal-data-link" href="#">персональных данных</a></label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="send-again request-popup__send-again display-none">
+                <h3 class="send-again__title">Спасибо<br>за обращение!</h3>
+                <p class="send-again__descr">С вами в ближайшее время свяжется наш менеджер!</p>
+                <button class="send-again__button footer-form-button request-popup__button" type="button">Отправить еще</button>
+            </div>
+        </div> 
     </header>
 
     <main class="index-main">
@@ -127,7 +156,7 @@
                             </button>
                         </li>
                         <li class="map-section__item">
-                            <button class="map-section__button map-section__button_current">
+                            <button class="map-section__button">
                                 Образование
                             </button>
                         </li>
@@ -173,7 +202,7 @@
             </div>
         </section>
 
-<!--         <section class="offers">
+        <section class="offers">
             <div class="offers__container container">
                 <h2 class="offers__title">Предложения</h2>
                 <p class="offers__descr">Клубный Дом Mozart — это 7 этажей и всего 90 апартаментов.</p>
@@ -197,7 +226,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="carousel-section">
             <div class="carousel-section__container container">
@@ -207,7 +236,7 @@
                     <button class="carousel__button carousel__button_to-left" type="button"></button>
                     <button class="carousel__button carousel__button_to-right" type="button"></button>
 
-                    <div class="carousel__item">
+                    <div class="carousel__item carousel__item_visible">
                         <img class="carousel__img" src="img/carousel-img-1.jpg" alt="interior" width="1000" height="600">
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">1/3</div>
@@ -218,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel__item visually-hidden">
+                    <div class="carousel__item">
                         <img class="carousel__img" src="img/carousel-img-2.jpg" alt="lobby" width="1000" height="600">
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">2/3</div>
@@ -229,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel__item visually-hidden">
+                    <div class="carousel__item">
                         <img class="carousel__img" src="img/carousel-img-3.jpg" alt="interior" width="1000" height="600">
                         <div class="carousel__descr-wrapper">
                             <div class="carousel__counter">3/3</div>
@@ -251,47 +280,47 @@
                 <ul class="specs__list">
                     <li class="specs__item">
                         <h3 class="specs__subtitle">СЕРВИС</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ПАРКИНГ	</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
-                    <li class="specs__item specs__item_current">
+                    <li class="specs__item">
                         <h3 class="specs__subtitle">СИСТЕМА БЕЗОПАСНОСТИ</h3>
-                        <p class="specs__descr">Видеонаблюдение, охранная сигнализация по периметру дома, современная система контроля доступа</p>
+                        <p class="specs__descr specs__descr_hidden">Видеонаблюдение, охранная сигнализация по периметру дома, современная система контроля доступа</p>
                         <button class="specs__button specs__button_minimize" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ЛИФТЫ</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ТЕРРИТОРИЯ</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ОКНА</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">КОНДИЦИОНИРОВАНИЕ</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                     <li class="specs__item">
                         <h3 class="specs__subtitle">ВЕНТИЛЯЦИЯ</h3>
-                        <p class="specs__descr visually-hidden">Lorem ipsum dolor sit amet.</p>
+                        <p class="specs__descr specs__descr_hidden">Lorem ipsum dolor sit amet.</p>
                         <button class="specs__button specs__button_expand" type="button"></button>
                     </li>
                 </ul>
@@ -399,8 +428,8 @@
                 </div>
             </div>
 
-            <div class="footer__request">
-                <form class="request-form" action="#">
+            <div class="footer__request ">
+                <form id="footer-request-form" class="request-form" action="#" method="">
                     <fieldset class="request-form__fieldset">
                         <legend class="request-form__legend">Записаться<br>на консультацию</legend>
                         <div class="request-form__input-wrapper">
@@ -414,13 +443,13 @@
                         <button class="request-form__button footer-form-button" type="submit">Оставить заявку</button>
 
                         <div class="request-form__agreement-wrapper">
-                            <input class="request-form__checkbox visually-hidden" id="checkbox-agreement" type="checkbox" checked required>
-                            <label class="request-form__agreement" for="checkbox-agreement">Даю согласие на обработку <a class="request-form__personal-data-link" href="#">персональных данных</a></label>
+                            <input class="request-form__checkbox visually-hidden" id="footer-checkbox-agreement" type="checkbox" checked required>
+                            <label class="request-form__agreement" for="footer-checkbox-agreement">Даю согласие на обработку <a class="request-form__personal-data-link" href="#">персональных данных</a></label>
                         </div>
                     </fieldset>
                 </form>
 
-                <div class="send-again visually-hidden">
+                <div id="send-again-window" class="send-again display-none">
                     <h3 class="send-again__title">Спасибо<br>за обращение!</h3>
                     <p class="send-again__descr">С вами в ближайшее время свяжется наш менеджер!</p>
                     <button class="send-again__button footer-form-button" type="button">Отправить еще</button>
@@ -428,5 +457,12 @@
             </div>            
         </div>
     </footer>
+
+    <script src="js/nav-mobile.js"></script>
+    <script src="js/request-form.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/map-buttons.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
